@@ -1,9 +1,7 @@
-#put the define function on this,
-#whatever this is
-@.define = (() ->
+(() ->
 
   #the modules that have already been defined.
-  # the object looks like
+  # the object looks like:
   # {
   #   moduleName: result of calling module definition function
   # }
@@ -27,7 +25,7 @@
     )
 
   # take a name, an array of dependencies, and a callback function
-  (name, deps, fn) ->
+  @.define = (name, deps, fn) ->
     #if all of the deps are in definedModules, or there's no deps,
     #set definedModules.<name> to the result of calling fn
     if allDepsAreReady(deps)
@@ -52,4 +50,7 @@
       waitingModules[name] =
         deps: deps
         fn: fn
+
+  @.require = (name) ->
+    definedModules[name]
 )()
