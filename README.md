@@ -23,17 +23,6 @@ Only use `require` after you know a dep is already loaded.
 var localThingy = require("thingy");
 ```
 
-## But servers?
-Don't use this with your server code. For shared code, use this trick, or something like it:
-```
-(function(root, factory) {
-if(typeof define === "undefined") {
-  root.newModule = factory(dep1, dep2);
-} else {
-  define("newModule", ["dep1", "dep2"], factory);
-}
-})(this, function(dep1, dep2){ });
-```
-  
+
 That's it. Pull requests + issues encouraged.
 
