@@ -1,5 +1,5 @@
 Package.describe({
-  summary: "A very simple implementation of require/define for client-side meteor scripts"
+  summary: "A very simple implementation of require/define for meteor"
 });
 
 Package.on_use(function (api) {

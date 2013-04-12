@@ -1,6 +1,6 @@
 {
   "name": "require",
-  "description": "A very simple implementation of require/define for client side meteor scripts",
+  "description": "A very simple implementation of require/define for meteor",
   "homepage": "https://github.com/tomconnors/meteor-require",
   "author": "Tom Connors",
   "version": "0.0.1",
