@@ -14,8 +14,8 @@ var handle = function(bundle, source_path, serve_path, where) {
   //remove the initial slash
   name = name.slice(1);
 
-  //remove the extension
-  name = name.substr(0, name.indexOf(".rjs"));
+  //remove the extension, make sure its lower case.
+  name = name.substr(0, name.indexOf(".rjs")).toLowerCase();
 
 
 
