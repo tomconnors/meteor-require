@@ -26,6 +26,11 @@
 
   # take a name, an array of dependencies, and a callback function
   @.define = (name, deps, fn) ->
+    if(!_.isString(name))
+      throw new Error("name is not a string. perhaps the file extension isn't .rjs?")
+
+    deps = _.map(deps, (dep) -> dep.toLowerCase())
+
     #if all of the deps are in definedModules, or there's no deps,
     #set definedModules.<name> to the result of calling fn
     if allDepsAreReady(deps)
