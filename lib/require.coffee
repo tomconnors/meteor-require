@@ -58,4 +58,9 @@
 
   @.require = (name) ->
     definedModules[name]
+
+  #by exposing the waiting modules it's easier to see if any modules have
+  #deps that are not getting resolved.
+  @.define._waitingModules = waitingModules
+  
 )()
