@@ -55,9 +55,8 @@ Package.register_extension("rjs", handle);
 
 Package.on_use(function (api) {
   api.use('underscore', ['client', 'server']);
-  api.use('coffeescript', ['client', 'server']);
   api.add_files([
-    'lib/require.coffee'
+    'lib/require.js'
   ], ['client', 'server']
   );
 });
