@@ -23,6 +23,8 @@ Only use `require` after you know a dep is already loaded.
 var localThingy = require("thingy");
 ```
 
+todo:
+* relative paths
+* anonymous modules without rjs extension
 
-That's it. Pull requests + issues encouraged. I'm still not even convinced this is necessary or a good idea. However, I used it in my pizza app and it worked just fine.
-
+That's it. Pull requests + issues encouraged. 
