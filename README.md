@@ -18,6 +18,12 @@ define("moduleName", ["dependency1", "dependency2"], definitionFunction);
   
 Note that you do have to name modules unless you use the extension `.rjs`. I don't know any way around that right now.
 
+Should you choose to use the .rjs extension, define modules like:
+
+```
+define(["dep1"], function(dep1){});
+```
+
 Only use `require` after you know a dep is already loaded.
 ```
 var localThingy = require("thingy");
