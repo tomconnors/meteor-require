@@ -23,6 +23,12 @@ Should you choose to use the .rjs extension, define modules like:
 ```
 define(["dep1"], function(dep1){});
 ```
+You can then access that module by its path, relative to the root of your app,
+so if the module I just defined above were located at /client/views/pizza, I could
+define a dependant module with:
+```
+define(["client/views/pizza"], function(pizza){ return !pizza; });
+```
 
 Only use `require` after you know a dep is already loaded.
 ```
