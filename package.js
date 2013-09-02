@@ -4,7 +4,9 @@ Package.describe({
 
 Package._transitional_registerBuildPlugin({
   name: "compileRjs",
-  use: [],
+  use: [
+    "underscore"
+  ],
   sources: [
     'plugin/compile-rjs.js'
   ],
