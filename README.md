@@ -1,3 +1,6 @@
+# Important: I don't maintain this library anymore.
+
+
 meteor-require
 ==============
 
